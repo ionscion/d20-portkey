@@ -1,8 +1,15 @@
+import React from 'react';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Project from './components/Project';
+
 
 function App() {
   return (
     <div>
-      <h1>React App</h1>
+      <Header />
+      <Project />
+      <Footer />
     </div>
   );
 }
