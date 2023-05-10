@@ -3,11 +3,13 @@ import React from 'react'
 function Navigation() {
   return (
     <div>
-        <a href="/">Home</a>
-        <a href="/about">About Me</a>
-        <a href="/projects">Projects</a>
-        <a href="/contact">Contact Me</a>
-        <a href="/resume">Resume</a>
+        <ul>
+            <li>Home</li>
+            <li>About Me</li>
+            <li>Projects</li>
+            <li>Contact Me</li>
+            <li>Resume</li>
+        </ul>
     </div>
   )
 }
