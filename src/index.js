@@ -6,6 +6,7 @@ import Root from './routes/root';
 import ErrorPage from './errorPage';
 import Project from './components/Project';
 import About from './components/About';
+import Contact from './components/Contact';
 
 
 const router = createBrowserRouter([
@@ -24,7 +25,7 @@ const router = createBrowserRouter([
       },
       {
         path: "contact",
-        element: <h1>Contact Me</h1>,
+        element: <Contact />,
       },
       {
         path: "resume",
