@@ -7,6 +7,7 @@ import ErrorPage from './errorPage';
 import Project from './components/Project';
 import About from './components/About';
 
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -20,7 +21,15 @@ const router = createBrowserRouter([
       {
         path: "about",
         element: <About />,
-      }
+      },
+      {
+        path: "contact",
+        element: <h1>Contact Me</h1>,
+      },
+      {
+        path: "resume",
+        element: <h1>Resume</h1>,
+      },
     ],
   },
   
