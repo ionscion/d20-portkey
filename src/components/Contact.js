@@ -17,7 +17,7 @@ function Contact() {
   };
 
   return (
-    <div className="flex justify-center mt-16">
+    <div className="flex justify-center mt-12">
       <div className="w-1/2">
         <h3 className="mb-4">Contact Me</h3>
         <form className="form" onSubmit={handleSubmitForm}>

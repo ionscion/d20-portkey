@@ -3,8 +3,8 @@ import ionscion from "../images/ionscion.png";
 
 function About() {
   return (
-    <div className="flex flex-col justify-center items-center mt-16">
-      <h3 className="mb-4">About Me</h3>
+    <div className="flex flex-col justify-center items-center mt-12">
+      <h3 className="mb-4 mt-2">About Me</h3>
       <img
         src={ionscion}
         alt="ionscion"
