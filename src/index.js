@@ -7,6 +7,7 @@ import ErrorPage from './errorPage';
 import Project from './components/Project';
 import About from './components/About';
 import Contact from './components/Contact';
+import Resume from './components/Resume';
 
 
 const router = createBrowserRouter([
@@ -29,7 +30,7 @@ const router = createBrowserRouter([
       },
       {
         path: "resume",
-        element: <h1>Resume</h1>,
+        element: <Resume />,
       },
     ],
   },

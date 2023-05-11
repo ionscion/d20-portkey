@@ -98,7 +98,7 @@ export default function Project() {
             rel="noreferrer"
             className="text-blue-500 hover:text-blue-600"
           >
-            Link to Github
+            Github
           </a>
         </div>
       </div>
