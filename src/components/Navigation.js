@@ -11,12 +11,8 @@ function Navigation() {
   ];
   const renderedLinks = links.map((link) => {
     return (
-      <li>
-        <Link
-          key={link.label}
-          to={link.path}
-          className="mb-3 blue-500 hover:text-blue-600"
-        >
+      <li key={link.label}>
+        <Link to={link.path} className="mb-3 blue-500 hover:text-blue-600">
           {link.label}
         </Link>
       </li>
@@ -24,9 +20,7 @@ function Navigation() {
   });
   return (
     <div>
-      <ul className="flex justify-center space-x-4">
-        {renderedLinks}
-      </ul>
+      <ul className="flex justify-center space-x-4">{renderedLinks}</ul>
     </div>
   );
 }

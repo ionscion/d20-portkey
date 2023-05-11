@@ -12,11 +12,17 @@ export default function Project() {
         description: "A web app that allows users to search for weather by city.",
         link: "https://ionscion.github.io/weather-dashboard",
     },
+    {
+        name: "Legacy Architects",
+        description: "A web app for managing estate planning clients.",
+        link: "https://legacy-architects.herokuapp.com",
+    },
+        
   ];
 
   const renderedProjects = projects.map((project) => {
     return (
-      <div className="mb-6 p-6 bg-white rounded-md shadow-md">
+      <div key={project.description} className="mb-6 p-6 bg-white rounded-md shadow-md">
         <h4 className="text-lg font-medium text-gray-800 mb-2">
           {project.name}
         </h4>
