@@ -34,6 +34,7 @@ function Contact() {
               placeholder="Your name.."
               className="form-input w-full mt-1 rounded-md shadow-sm"
               onChange={handleInputChange}
+              required
             />
           </div>
           <div className="mb-4">
@@ -47,6 +48,7 @@ function Contact() {
               placeholder="Your email.."
               className="form-input w-full mt-1 rounded-md shadow-sm"
               onChange={handleInputChange}
+              required
             />
           </div>
           <div className="mb-4">
@@ -60,6 +62,7 @@ function Contact() {
               className="form-textarea mt-1 block w-full rounded-md shadow-sm"
               style={{ height: "200px" }}
               onChange={handleInputChange}
+              required
             ></textarea>
           </div>
           <button
