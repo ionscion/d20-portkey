@@ -12,10 +12,17 @@ function About() {
           className="w-32 h-32 object-contain mb-4"
         />
         <p className="text-center text-gray-600">
-          World renowned bread-maker extraordinaire 😝, dipping his toes into
-          the digital world. This site is currently under construction, please
-          pardon any loud noises while we work through this together. Please
-          click on the images below to preview some of my work! 🔥{" "}
+          Hello! I'm Ben, a software developer based in Denver, Colorado. I'm currently 
+          working in the finance realm as an Operations Manager but I'm always looking
+          for new opportunities to expand my skillset and grow as a developer.
+
+          <br />
+          
+          Please navigate to the Portfolio tab to preview some of my work! 🔥{" "}
+          
+          <br />
+          Additonal links to my GitHub, LinkedIn, and StackOverflow profiles can be found in the footer.
+          Thanks for stopping by! 🙏
         </p>
       </div>
     </div>

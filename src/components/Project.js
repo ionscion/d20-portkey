@@ -108,8 +108,9 @@ export default function Project() {
   return (
     <div className="mt-12">
       <h3 className="text-2xl font-bold text-gray-800 mb-6 text-center">
-        Projects
+        Portfolio
       </h3>
+
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {renderedProjects}
       </div>

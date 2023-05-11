@@ -1,19 +1,38 @@
 import React from "react";
 import { useState } from "react";
+import { validateEmail } from "../utils/helper.js";
 
 function Contact() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+
   const handleSubmitForm = (event) => {
     event.preventDefault();
+    if (!validateEmail(email)) {
+      alert("Email is invalid");
+      return;
+    }
+    console.log(`form was submitted`);
+    //placeholder for API call
+    setEmail("");
+    setName("");
+    setSubject("");
   };
-
-  const [data, setData] = useState({
-    name: "",
-    email: "",
-    subject: "",
-  });
+ 
 
   const handleInputChange = (event) => {
-    setData({ ...data, [event.target.name]: event.target.value });
+    const { target } = event;
+    const inputType = target.name;
+    const inputValue = target.value;
+
+    if (inputType === 'email') {
+      setEmail(inputValue);
+    } else if (inputType === 'name') {
+      setName(inputValue) 
+    } else {
+      setSubject(inputValue);
+    }
   };
 
   return (
@@ -22,12 +41,13 @@ function Contact() {
         <h3 className="text-2xl font-bold text-gray-800 mb-4 text-center">
           Contact Me
         </h3>
-        <form className="form" onSubmit={handleSubmitForm}>
+        <form className="form" >
           <div className="mb-4">
             <label htmlFor="name" className="text-gray-600">
               Name
             </label>
             <input
+              value={name}
               type="text"
               id="name"
               name="name"
@@ -42,7 +62,8 @@ function Contact() {
               Email
             </label>
             <input
-              type="text"
+              value={email}
+              type="email"
               id="email"
               name="email"
               placeholder="Your email.."
@@ -56,6 +77,7 @@ function Contact() {
               Subject
             </label>
             <textarea
+              value={subject}
               id="subject"
               name="subject"
               placeholder="Write something.."
@@ -66,6 +88,7 @@ function Contact() {
             ></textarea>
           </div>
           <button
+            onClick={handleSubmitForm}
             type="submit"
             className="inline-flex justify-center items-center w-full px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
           >
