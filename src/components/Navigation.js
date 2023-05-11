@@ -5,7 +5,7 @@ function Navigation() {
   const links = [
     { label: "Home", path: "/" },
     { label: "About", path: "/about" },
-    { label: "Projects", path: "/projects" },
+    { label: "Portfolio", path: "/projects" },
     { label: "Contact Me", path: "/contact" },
     { label: "Resume", path: "/resume" },
   ];

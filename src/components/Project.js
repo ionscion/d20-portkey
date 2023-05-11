@@ -1,4 +1,8 @@
 import React from "react";
+// import { useState, useEffect } from "react";
+import code from "../images/code.jpg";
+
+const apiKey = process.env.UNSPLASH;
 
 export default function Project() {
   const projects = [
@@ -8,6 +12,7 @@ export default function Project() {
         "A web app that allows users to search for concerts by artist, venue, or city.",
       link: "https://ionscion.github.io/miniature-garbanzo",
       ghub: "https://github.com/ionscion/miniature-garbanzo",
+      image: code,
     },
     {
       name: "PWA Text Editor",
@@ -42,12 +47,37 @@ export default function Project() {
     },
   ];
 
-  const renderedProjects = projects.map((project) => {
+  // const [projectImages, setProjectImages] = useState([]);
+
+  // useEffect(() => {
+  //   fetchProjectImages();
+  // });
+
+
+  // const fetchRandomImageFromUnsplash = async () => {
+  //   const response = await fetch(
+  //     `https://api.unsplash.com/photos/random/?client_id=${apiKey}&query=technology&orientation=landscape&fit=crop&w=500&h=300`
+  //   );
+  //   const data = await response.json();
+  //   return data.urls.regular;
+  // };
+
+  // const fetchProjectImages = async () => {
+  //   const imagePromises = projects.map((project) =>
+  //     fetchRandomImageFromUnsplash()
+  //   );
+  //   const images = await Promise.all(imagePromises);
+  //   setProjectImages(images);
+  // };
+
+  const renderedProjects = projects.map((project, index) => {
     return (
       <div
         key={project.description}
         className="mb-6 p-6 bg-white rounded-md shadow-md"
       >
+        {/* <img src={projectImages[index]} alt="Project" className="mb-4" /> */}
+        {/* <img src={project.image} alt={project.name} className="w-full h-60 object-cover"/> */}
         <h4 className="text-lg font-medium text-gray-800 mb-2">
           {project.name}
         </h4>
