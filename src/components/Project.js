@@ -2,14 +2,14 @@ import React from "react";
 // import { useState, useEffect } from "react";
 import code from "../images/code.jpg";
 
-const apiKey = process.env.UNSPLASH;
+// const apiKey = process.env.UNSPLASH;
 
 export default function Project() {
   const projects = [
     {
       name: "Concert Finder",
       description:
-        "A web app that allows users to search for concerts by artist, venue, or city.",
+        "A web app to search for concerts by artist, venue, or city.",
       link: "https://ionscion.github.io/miniature-garbanzo",
       ghub: "https://github.com/ionscion/miniature-garbanzo",
       image: code,
@@ -35,7 +35,8 @@ export default function Project() {
     },
     {
       name: "Weather Tracker",
-      description: "A web app for seeing current and future weather by location.",
+      description:
+        "A web app for seeing current and future weather by location.",
       link: "https://ionscion.github.io/hexagonal-meteorology/",
       ghub: "https://github.com/ionscion/hexagonal-meteorology",
     },
@@ -52,7 +53,6 @@ export default function Project() {
   // useEffect(() => {
   //   fetchProjectImages();
   // });
-
 
   // const fetchRandomImageFromUnsplash = async () => {
   //   const response = await fetch(
@@ -82,24 +82,25 @@ export default function Project() {
           {project.name}
         </h4>
         <p className="text-gray-600 mb-4">{project.description}</p>
-        <a
-          href={project.link}
-          target="_blank"
-          rel="noreferrer"
-          className="text-blue-500 hover:text-blue-600"
-        >
-          Deployed App
-        </a>
-        <br />
+        <div className="flex justify-center space-x-4">
+          <a
+            href={project.link}
+            target="_blank"
+            rel="noreferrer"
+            className="text-blue-500 hover:text-blue-600"
+          >
+            Deployed App
+          </a>
 
-        <a
-          href={project.ghub}
-          target="_blank"
-          rel="noreferrer"
-          className="text-blue-500 hover:text-blue-600"
-        >
-          Link to Github
-        </a>
+          <a
+            href={project.ghub}
+            target="_blank"
+            rel="noreferrer"
+            className="text-blue-500 hover:text-blue-600"
+          >
+            Link to Github
+          </a>
+        </div>
       </div>
     );
   });

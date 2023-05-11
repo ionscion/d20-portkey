@@ -1,5 +1,6 @@
 import React from "react";
 import ghubIcon from "../images/github.svg";
+import linkedIn from "../images/linkedin.svg";
 
 function Footer() {
   return (
@@ -8,6 +9,13 @@ function Footer() {
       <div className="flex justify-center space-x-4">
         <a href="https://github.com/ionscion" target="_blank" rel="noreferrer">
           <img src={ghubIcon} alt="GitHub" className="w-6 h-6" />
+        </a>
+        <a
+          href="https://linkedin.com/in/ben-sboto-4b0040276"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img src={linkedIn} alt="LikedIn" className="w-6 h-6" />
         </a>
       </div>
     </div>
