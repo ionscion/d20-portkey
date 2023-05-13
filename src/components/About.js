@@ -1,5 +1,5 @@
 import React from "react";
-import ionscion from "../images/ionscion.png";
+import ionscion from "../images/ionscion.jpg";
 
 function About() {
   return (
